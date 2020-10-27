@@ -9,20 +9,41 @@
             border-style: solid;
             border-color: darkblue;
             text-align: center;
-            background-image;
+        }
+
+        #random {
+            width: 100%;
+            height: 800px;
+            border: 1px solid black;
+            background-image: url('date1.png');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
-    <meta charset="utf-8" />
+
 
     <script type="text/javascript">
 
-        var images = ['image-1.jpg', 'image-2.jpg', 'image-3.jpg', 'image-4.jpg'];
-        document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+        function randombg() {
 
+            var random = Math.floor(Math.random() * 3) + 0;
+            var images = ["url('date1.png')", "url('date2.jpg')", "url('date3.jpg')"];
+            document.getElementById("random").style.backgroundImage = images[random];
+        }
+
+        function randomgame() {
+
+            var randomg = Math.floor(Math.random() * 3) + 0;
+            var results = ["Put a mask on for 5 minutes"];
+        }
     </script>
 
     <title></title>
     <h1>   Pandemic Dating: COVID-19 Special </h1>
-
+    <body onload="randombg()">
+        <div id="random"></div>
     </body>
+    <button onclick="randombg()">New Date Setting</button>
+    <button onclick="randomgame()">Spin the Wheel</button>
 </html>
