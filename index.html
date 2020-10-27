@@ -37,6 +37,21 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
+        p {
+            color:white;
+            position: 
+        }
+        .container {
+             position: relative;
+        }   
+
+        .center {
+             position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+        }
     </style>
 
 
@@ -44,15 +59,16 @@
 
         function randombg() {
 
-            var random = Math.floor(Math.random() * 4) + 0;
+            var random = Math.floor(Math.random() * 4);
             var images = ["url('date1.jpg')", "url('date2.jpg')", "url('date3.jpg')", "url('date4.jpg')"];
             document.getElementById("random").style.backgroundImage = images[random];
         }
 
         function randomgame() {
 
-            var randomg = Math.floor(Math.random() * 1) + 0;
+            var randomg = Math.floor(Math.random() * 1);
             var results = ["COVID-19 Special: Put a mask on for 5 minutes"];
+            document.getElementById("wheel"). innerHTML= results[randomg];
         }
 
         function trivia () {}
@@ -62,6 +78,7 @@
     <h1 id="headback"><div class="logo"></div> Pandemic Dating: COVID-19 Special </h1>
     <body onload="randombg()" style="background-color:black;">
         <div id="random"></div>
+        <p id="wheel" class="center"></p>
         
     </body>
     <button onclick="randombg()">New Date Setting</button>
