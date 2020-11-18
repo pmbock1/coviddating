@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pandemic Dating</title>
+        <title>Module 1 Template</title>
         <!-- jQuery -->
         <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -19,41 +19,45 @@
         <script src="explore_img.js"></script>
     </head>
 
-    <body style="overflow: hidden; margin: 0" onload="randombg()" style="background-color:black">
+    <body style="overflow: hidden; margin: 0">
         
         <!-- ========================================================================================== -->
         <!-- Fill in the content BELOW this line -->
 
-    <p> Hello </p>
-
-<body onload="randombg()" style="background-color:black;">
-        <div id="random"></div>
-        <p id="wheel" class="center"> </p>
-       <svg width="auto" height="500" class="center" display="block" margin="auto"> <rect x="600" y="10" width="700" height="100"
-            style="fill:black;stroke:white;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" /> </svg> 
-
-        
+        <div id="nft-marker1-info" class="info-pane" >
+            <h1>Fill in some info about this location.</h1>
+        </div>
+        <div id="nft-marker2-info" class="info-pane">
+            <h1>Fill in some info about this location.</h1>
+        </div>
+        <div id="nft-marker3-info" class="info-pane">
+            <h1>Fill in some info about this location.</h1>
+        </div>
 
         <!-- Fill in the content ABOVE this line -->
         <!-- ========================================================================================== -->
 
         <!-- A simple loader from the sample code-->
         <div class="arjs-loader">
-            <div>Make a Face!</div>
+            <div>Search for the Shape!</div>
         </div>
         <!-- HUD -->
         <div class="hud normal" id="markerState">
             Point the camera to a marker.
         </div>
         <!-- AR.js core -->
-        <a-scene embedded arjs="trackingMethod: best" vr-mode-ui="enabled: false" init-img-markers class="video">
+        <a-scene embedded arjs="trackingMethod: best" vr-mode-ui="enabled: false" init-img-markers>
             
-            <!-- For Marker-based Tracking (url is set by JS due to a bug) -->
-            <a-nft type="nft" url="x" id="nft-marker1" data-info-pane="nft-marker1-info" data-marker-name="Old Main"></a-nft>
-            <a-nft type="nft" url="x" id="nft-marker2" data-info-pane="nft-marker2-info" data-marker-name="Hayden Library"></a-nft>
-            <a-nft type="nft" url="x" id="nft-marker3" data-info-pane="nft-marker3-info" data-marker-name="ASU Gammage"></a-nft>
-            <a-entity camera rotation-reader></a-entity> 
-
+        
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-sphere position="1 10 -5" radius="2" color="#ffff00"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        
+        
+        <a-triangle position="-1 0.5 -3" color="#CCC" vertex-c="1 -1 0"></a-triangle>
         </a-scene>
-</body>
+
+        
+    </body>
 </html>

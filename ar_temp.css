@@ -1,52 +1,52 @@
-.arjs-loader {
-    height: %;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
-}
+    .arjs-loader {
+        height: %;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+    }
 
-.hud {
-    position: center center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(244, 244, 244, 0.8);
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .hud {
+        position: center center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(244, 244, 244, 0.8);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.info-pane {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 60%;
-    width: 100%;
-    display: none;
-    background-color: rgba(244, 244, 244, 0.8);
-}
-.video
-        { position: relative;
+    .info-pane {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 60%;
+        width: 100%;
+        display: none;
+        background-color: rgba(244, 244, 244, 0.8);
+    }
+    .video
+            { position: absolute;
 
-            height:10%;
-           }
-.success {
-    background-color: #d4edda;
-}
-.danger {
-    background-color: #f8d7da;
+                height:10%;
+               }
+    .success {
+        background-color: #d4edda;
+    }
+    .danger {
+        background-color: #f8d7da;
 }
     h1 {
             font-family: 'Times New Roman', Times, serif;
@@ -55,6 +55,7 @@
             border-color: white;
             text-align: center;
             color: #FFFFFF;
+            width: 100%;
         }
 
         #random {
@@ -64,7 +65,8 @@
             background-image: url('date1.jpg');
             background-position: center center;
             background-size: cover;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat
+            z-index:-1;
         }
 
         body {
@@ -101,7 +103,23 @@
             background-color: red ;
             border-color: black;
             border-radius: 10px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        .image {
+            position: absolute;
+            margin-left:225px;
+            width: 2000;
+            top: 50%;
+            z-index: 10;
+            image-rendering: auto;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
 
         }
 
-  
+    svg {
+        z-index: 0;
+        overflow: visible;
+    }
+    img {color:white;
+        font-size:30px;}
