@@ -25,7 +25,7 @@
         <!-- Fill in the content BELOW this line -->
 
         <div id="nft-marker1-info" class="info-pane" >
-
+            <h1>You found the Yellow Sphere!.</h1>
         </div>
         <div id="nft-marker2-info" class="info-pane">
             <h1>Fill in some info about this location.</h1>
@@ -39,11 +39,25 @@
 
         <!-- A simple loader from the sample code-->
         <div class="arjs-loader">
-
+            <div>Search for the Shape!</div>
+        </div>
+        <!-- HUD -->
+        <div class="hud normal" id="markerState">
+            Point the camera to a shape
         </div>
         <!-- AR.js core -->
         <a-scene embedded arjs="trackingMethod: best" vr-mode-ui="enabled: false" init-img-markers>
             
+        
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-sphere position="1 10 -5" radius="2" color="#ffff00"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        
+        
+        <a-triangle position="-1 0.5 -3" color="#CCC" vertex-c="1 -1 0"></a-triangle>
+        </a-scene>
 
+        
     </body>
 </html>
